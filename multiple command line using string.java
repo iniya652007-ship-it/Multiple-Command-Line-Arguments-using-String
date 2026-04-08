@@ -1,0 +1,17 @@
+public class HelloApp {
+    public static void main(String[] args) {
+
+        String greeting;
+
+        if (args.length == 0) {
+            greeting = "Hello, World!";
+        } else {
+            // Join all arguments with comma and space
+            String names = String.join(", ", args);
+            greeting = "Hello, " + names + "!";
+        }
+
+        // Print the greeting
+        System.out.println(greeting);
+    }
+}
